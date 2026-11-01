@@ -82,12 +82,12 @@
     }
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250508.0",
+    "@cloudflare/workers-types": "^5.20261025.1",
     "@types/express": "^5.0.1",
-    "@types/node": "^22.15.17",
+    "@types/node": "^26.6.5",
     "bun-types": "^1.2.0",
-    "eslint": "^9.26.0",
-    "fastify": "^4.29.1",
+    "eslint": "^10.13.0",
+    "fastify": "^5.12.7",
     "globals": "^17.14.0",
     "hono": "^4.7.8",
     "itty-router": "^5.0.18",
