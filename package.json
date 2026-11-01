@@ -1,0 +1,99 @@
+{
+  "name": "@iocium/cloudflare-access-jwt",
+  "version": "0.1.0",
+  "description": "JWT verification middleware for Cloudflare Access, compatible with hono, itty-router, express, and fastify.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./verify": {
+      "import": "./dist/verify.js",
+      "types": "./dist/verify.d.ts"
+    },
+    "./middleware/hono": {
+      "import": "./dist/middleware/hono.js",
+      "types": "./dist/middleware/hono.d.ts"
+    },
+    "./middleware/itty": {
+      "import": "./dist/middleware/itty.js",
+      "types": "./dist/middleware/itty.d.ts"
+    },
+    "./middleware/express": {
+      "import": "./dist/middleware/express.js",
+      "types": "./dist/middleware/express.d.ts"
+    },
+    "./middleware/fastify": {
+      "import": "./dist/middleware/fastify.js",
+      "types": "./dist/middleware/fastify.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "bun test",
+    "test:coverage": "bun test --coverage",
+    "dev": "bun test --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "cloudflare",
+    "access",
+    "jwt",
+    "middleware",
+    "hono",
+    "itty-router",
+    "express",
+    "fastify"
+  ],
+  "author": "Iocium",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iocium/cloudflare-access-jwt.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
+  "peerDependencies": {
+    "express": "^4.0.0 || ^5.0.0",
+    "fastify": "^4.0.0 || ^5.0.0",
+    "hono": "^4.0.0",
+    "itty-router": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    },
+    "fastify": {
+      "optional": true
+    },
+    "hono": {
+      "optional": true
+    },
+    "itty-router": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250508.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.17",
+    "bun-types": "^1.2.0",
+    "eslint": "^9.26.0",
+    "fastify": "^4.29.1",
+    "globals": "^17.14.0",
+    "hono": "^4.7.8",
+    "itty-router": "^5.0.18",
+    "tsup": "^9.0.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "^8.72.1"
+  },
+  "type": "module"
+}
