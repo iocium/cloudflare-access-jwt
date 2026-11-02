@@ -101,7 +101,7 @@ export async function catchJwtError(promise: Promise<unknown>): Promise<JwtError
     await promise
   } catch (error) {
     if (error instanceof JwtError) return error
-    throw new Error(`Expected JwtError, got: ${error instanceof Error ? error.message : String(error)}`)
+    throw new Error(`Expected JwtError, got: ${error instanceof Error ? error.message : String(error)}`, { cause: error })
   }
   throw new Error('Expected verification to reject, but it resolved')
 }
