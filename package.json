@@ -82,19 +82,19 @@
     }
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^5.20261108.1",
+    "@cloudflare/workers-types": "^5.20261115.1",
     "@eslint/js": "^10.0.1",
     "@types/express": "^5.0.1",
     "@types/node": "^26.6.6",
     "bun-types": "^1.2.0",
-    "eslint": "^10.14.0",
+    "eslint": "^10.15.0",
     "fastify": "^5.12.8",
     "globals": "^17.14.0",
-    "hono": "^4.13.17",
+    "hono": "^4.13.18",
     "itty-router": "^5.0.18",
     "tsup": "^9.0.0",
     "typescript": "6.0.3",
-    "typescript-eslint": "^8.72.1"
+    "typescript-eslint": "^8.72.2"
   },
   "type": "module"
 }
